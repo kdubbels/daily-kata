@@ -1,22 +1,14 @@
-// Expects comma-separated list of strings
-function splitString(string, separator) {
-	const splitted = string.split(separator);
+function countWords(string) {
+  var split = string.split(',');
+  
+  this.frequencies = {};
 
-	const trimmed = splitted.map(function(word) { return word.trim(); });
+  split.forEach(function(word){
+  	frequencies[word.trim()] = 0;
+  })
+  split.forEach(function(word){
+  	frequencies[word.trim()] += 1;
+  })
 
-	return trimmed;
+  return frequencies
 }
-
-// Expects array of strings
-function scan(split) {
-	frequencies = {};
-	split.forEach(function(word) {
-		frequencies[word] = 0;
-	})
-	split.forEach(function(word) {
-		frequencies[word] += 1;
-	})
-	return frequencies;
-}
-
-// Chain like (scan(splitString("foo, bar, baz, foo")));

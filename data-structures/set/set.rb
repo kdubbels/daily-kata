@@ -46,17 +46,17 @@ class Set
   attr_reader :dataStore
 end
 
-cis = Set.new
-cis.add("Clayton")
-cis.add("Mike")
-cis.add("Jennifer")
-cis.add("Raymond")
+# cis = Set.new
+# cis.add("Clayton")
+# cis.add("Mike")
+# cis.add("Jennifer")
+# cis.add("Raymond")
 
-dmp = Set.new
-dmp.add("Raymond")
-dmp.add("Cynthia")
-dmp.add("Jonathan")
+# dmp = Set.new
+# dmp.add("Raymond")
+# dmp.add("Cynthia")
+# dmp.add("Jonathan")
 
-it = Set.new
-it = cis.union(dmp)
-puts it.show()
+# it = Set.new
+# it = cis.union(dmp)
+# puts it.show()
