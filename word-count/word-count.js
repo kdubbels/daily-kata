@@ -12,3 +12,7 @@ function countWords(string) {
 
   return frequencies
 }
+
+// one line version
+
+string.split('').forEach(function(word) { Number.isNaN(frequencies[word]) == true ? frequencies[word] = 1 : frequencies[word] += 1;});
